@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+         version="4.0">
+
+  <!-- Page d'accueil par défaut -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <display-name>PROJET_JEE</display-name>
+
+  <!-- Déclaration du servlet AjouterLivreServlet -->
+  <servlet>
+    <description>Servlet permettant d'ajouter un livre</description>
+    <display-name>AjouterLivreServlet</display-name>
+    <servlet-name>AjouterLivreServlet</servlet-name>
+    <servlet-class>controller.AjouterLivreServlet</servlet-class>
+  </servlet>
+
+  <!-- Mapping du servlet AjouterLivreServlet -->
+  <servlet-mapping>
+    <servlet-name>AjouterLivreServlet</servlet-name>
+    <url-pattern>/AjouterLivreServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Déclaration du servlet ClientServlet -->
+  <servlet>
+    <description>Servlet gérant les actions du client</description>
+    <display-name>ClientServlet</display-name>
+    <servlet-name>ClientServlet</servlet-name>
+    <servlet-class>controller.ClientServlet</servlet-class>
+  </servlet>
+
+  <!-- Mapping du servlet ClientServlet -->
+  
+  
+
+</web-app>
